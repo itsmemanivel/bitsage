@@ -62,10 +62,13 @@ ul,li {
     background-color: transparent;
     cursor: pointer;
 }
+
+/* section 1 */
 .grid-container-1 {
     background-color: rgba(252, 232, 255, 0.83);
     display: grid;
     grid-template-columns: auto auto;
+    height: 90%;
 }
 .banner-text {
     grid-area: 1/1/1/span 4;
@@ -109,14 +112,54 @@ ul,li {
     grid-area: 1/5/1/span 8;
 }
 .banner-illustration>img {
-    width: 100%;
+    width: 60vw;
 }
 
+/* section 2 */
 .grid-container-2 {
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
 }
+.our-achievements {
+    grid-area: 1/1/1/12;    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.our-achievements>p {
+    font-family: 'Roboto';
+    font-size: 2em;
+    color: rgba(61, 61, 64, 1);
+    text-align: center;
+}
+.our-achievements>p>strong {
+    color: black;
+}
+.courses {
+    grid-area: 2/1/2/12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.arrows-btn {
+    grid-area: 3/1/3/12;
+}
+.courses>.course-deck {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.courses>.course-menus>ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-gap: 15px;
+    color: rgba(121, 26, 130, 1);
+}
+
 
 .grid-container-3 {
     background-color: rgba(252, 232, 255, 0.83);

@@ -41,11 +41,11 @@
         </section>
         <section class="grid-container-2">
             <div class="our-achievements">
-                <p>Join <strong>100+</strong> students gaining practical experience and <br> gaining competitive edge against other students</p>
+                <p>Join <strong>100+</strong> students gaining practical experience and <br> gaining competitive edge against other students</p><br><br><br>
             </div>
             <div class="courses">
-                <div class="title">
-                    <h1>Our courses</h1>
+                <div class="courses-title title-img">
+                    <img src="Assets/our-courses.png" alt="course-title"><br><br><br><br><br>
                 </div>
                 <div class="course-menus">
                     <ul>
@@ -192,28 +192,74 @@
             </div>
         </section>
         <section class="grid-container-3">
-            <div class="feedback-title">
-                <h1>Students feedback</h1>
+            <div class="feedback-title title-img">
+                <img src="Assets/feedbacks.png" alt="feedback-title"><br><br><br>
             </div>
-            <div class="feedback-deck">
-                <div class="feedback-1"></div>
-                <div class="feedback-2"></div>
-                <div class="feedback-3"></div>
-                <div class="feedback-4"></div>
+            <div class="empty-space-1"></div>
+            <div id="feedback-deck" class="feedback-deck">
+            </div>
+            <div class="empty-space-2"></div>
+            <div class="feedbackArrow-btn">
+                <div>
+                    <h4 class="feedback-text"><span id="feedback-index" ></span>/<span id="feedback-length" >07</span></h4>
+                </div>
+                <progress max="100" value="10" id="progress-bar" class="feedback-progress">
+                    <div class="progress-bar">
+                        <span style="width: 75%;">75%</span>
+                    </div>
+                </progress>
+                <div onclick="feedbackLeft()" class="feedbackLeft-arrow">
+                    <img src="Assets/arrow.svg" alt="left-arrow">
+                </div>
+                <div onclick="feedbackRight()" class="feedbackRight-arrow">
+                    <img src="Assets/arrow.svg" alt="right-arrow">
+                </div>
             </div>
         </section>
         <section class="grid-container-4">
-    
+            
         </section>
         <section class="grid-container-5">
-    
+            <div class="works-title title-img">
+               <img src="Assets/works.png" alt="works">
+            </div>
+            <div class="works-content">
+                <div class="user-img">
+                    <img src="Assets/user profile.svg" alt="user">
+                    <div>
+                        <p class="works-text">Once you are registered for a course ,<br> we will give you introduction into that<br> course and give you tasks to<br> complete in a day.</p>
+                    </div>
+                </div>
+                <div class="todo-img">
+                    <img src="Assets/task.svg" alt="todo">
+                    <div>
+                        <p class="works-text">At the end of the day we evaluate<br> your task and give feedback and the<br> right solution to finish the task.</p>
+                    </div>
+                </div>
+                <div class="videocam-img">
+                    <img src="Assets/video camera.svg" alt="videocam">
+                    <div>
+                        <p class="works-text">We conduct virtual meeting at<br> weekend to discuss about doubts <br>and ideas.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="grid-container-6">
-    
+            <div class="title-img newsletter-title">
+                <span>Join our</span><br>
+                <img src="Assets/newsletter.png" alt="newsletter-title">
+            </div>
+            <div class="newsletter-input">
+                <input type="text" placeholder="Email"><button>submit</button>
+            </div>
         </section>
     </main>
     <footer>
-
+        <div class="footer-text">
+            <h1>Powered by Blue pixel studio</h1>
+        </div>
     </footer>
+    <script src="./js/utils.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
